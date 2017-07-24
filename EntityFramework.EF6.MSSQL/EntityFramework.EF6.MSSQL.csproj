@@ -69,10 +69,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="School.cs" />
     <Compile Include="SchoolContext.cs" />
+    <Compile Include="SchoolZone.cs" />
     <Compile Include="Standard.cs" />
     <Compile Include="Student.cs" />
   </ItemGroup>

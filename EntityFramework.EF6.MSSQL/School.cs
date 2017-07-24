@@ -12,5 +12,6 @@ namespace EntityFramework.EF6.MSSQL
         public string SchoolName { get; set;}
 
         public Student Student { get; set; }
+        public SchoolZone SchoolZone { get; set;}
     }
 }

@@ -19,6 +19,8 @@ namespace EntityFramework.EF6.MSSQL
         public decimal Height { get; set; }
         public float Weight { get; set; }
 
+
+
         public Standard Standard { get; set; }
     }
 }

@@ -14,7 +14,8 @@ namespace EntityFramework.EF6.MSSQL
 
         public SchoolContext() : base("name=AttachToMdfStoredInLocalFolder")
         {
-           
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<SchoolContext,
+            Migrations.Configuration>("AttachToMdfStoredInLocalFolder"));
         }
 
       
@@ -22,6 +23,7 @@ namespace EntityFramework.EF6.MSSQL
         public DbSet<Student> Students { get; set; }
         public DbSet<Standard> Standards { get; set; }
         public DbSet<School> Schools { get; set; }
+        public DbSet<SchoolZone> SchoolZones { get; set; }
 
     }
 }
